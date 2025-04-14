@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { toast } from "@/hooks/use-toast"
+import emailjs from "emailjs-com"
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -25,15 +26,29 @@ export default function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message Sent!",
-        description: "We'll get back to you as soon as possible.",
+    emailjs
+      .send(
+        "service_t7wyjmi", 
+        "template_0un8uvh",
+        formData,
+        "lMlBCbWc81U0MzgjI"
+      )
+      .then(() => {
+        toast({
+          title: "Message Sent!",
+          description: "We've received your message and will respond soon.",
+        })
+        setFormData({ name: "", email: "", message: "" })
+        setIsSubmitting(false)
       })
-      setFormData({ name: "", email: "", message: "" })
-      setIsSubmitting(false)
-    }, 1500)
+      .catch((error) => {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+        })
+        console.error(error)
+        setIsSubmitting(false)
+      })
   }
 
   return (
