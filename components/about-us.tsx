@@ -2,11 +2,14 @@ export default function AboutUs() {
   return (
     <section id="about" className="w-full py-12 md:py-24 bg-white">
       <div className="container px-4 md:px-6">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">About TelTaste</h2>
-          <p className="text-gray-500 md:text-xl mt-4 max-w-3xl mx-auto">
-            TelTaste is a culinary business that specializes in authentic Indonesian food products. Our mission is to
-            bring the rich and diverse flavors of Indonesian cuisine to food enthusiasts everywhere.
+        <div className="mb-12">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl text-center">About TelTaste</h2>
+          <p className="text-gray-500 md:text-xl mt-4 max-w-3xl mx-auto text-justify">
+            TelTaste adalah brand kuliner modern yang terinspirasi dari kekayaan cita rasa Indonesia. Kami menghadirkan berbagai produk makanan siap saji dan pelengkap makanan yang praktis, autentik, dan inovatif. <br /><br />
+            Produk unggulan kami — seperti Nasi GIT (nasi kepal isi ayam dan jamur), Dimsum dengan saus Chili Oil atau Mentai, serta Sambal Kecombrang — dirancang untuk memberikan sensasi rasa yang lezat, mudah dinikmati, dan cocok untuk berbagai momen. Baik untuk pekerja kantoran yang sibuk, mahasiswa yang ingin camilan hemat dan mengenyangkan, hingga keluarga yang mencari variasi makanan di rumah. <br /><br />
+            Kami percaya bahwa makanan bukan hanya soal rasa, tetapi juga kemudahan dalam menikmati. Misi TelTaste adalah membawa kekayaan rasa khas Nusantara lebih dekat ke masyarakat modern melalui produk yang terjangkau, berkualitas, dan siap santap. <br /><br />
+            Dari dapur rumahan hingga acara Market Day, dari makan siang praktis hingga camilan sore — TelTaste hadir untuk menemani hari-hari Anda dengan rasa yang selalu bikin rindu. <br /><br />
+            <p className="text-center">Let’s Taste TelTaste!</p>
           </p>
         </div>
 
@@ -15,9 +18,7 @@ export default function AboutUs() {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-gray-500 max-w-3xl mx-auto">
-              TelTaste began as a small home kitchen experiment, born from our founder's love for traditional Indonesian
-              flavors. What started as sharing homemade dishes with friends and family quickly grew into a passionate
-              culinary venture as more people discovered and fell in love with our authentic taste.
+              TelTaste dimulai sebagai eksperimen dapur rumahan kecil, lahir dari kecintaan pendiri kami terhadap cita rasa tradisional Indonesia. Apa yang dimulai dengan berbagi hidangan rumahan kepada teman-teman dan keluarga, dengan cepat berkembang menjadi sebuah usaha kuliner yang penuh semangat seiring semakin banyak orang yang menemukan dan jatuh cinta dengan rasa autentik kami.
             </p>
           </div>
 
@@ -25,24 +26,21 @@ export default function AboutUs() {
             <div className="bg-gray-50 p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-3 text-red-600">Our Mission</h4>
               <p className="text-gray-500">
-                To preserve and share the authentic flavors of Indonesian cuisine while innovating to create convenient,
-                high-quality food products that bring joy to our customers.
+                Untuk melestarikan dan membagikan cita rasa autentik masakan Indonesia sambil berinovasi untuk menciptakan produk makanan berkualitas tinggi yang praktis dan membawa kebahagiaan bagi pelanggan kami.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-3 text-red-600">Our Vision</h4>
               <p className="text-gray-500">
-                To become a leading brand in Indonesian culinary products, recognized for quality, authenticity, and
-                innovation, making Indonesian flavors accessible to food lovers everywhere.
+                Menjadi merek terkemuka dalam produk kuliner Indonesia, yang diakui karena kualitas, keaslian, dan inovasi, serta menjadikan cita rasa Indonesia dapat diakses oleh para pecinta makanan di mana saja.
               </p>
             </div>
 
             <div className="bg-gray-50 p-6 rounded-lg">
               <h4 className="text-xl font-bold mb-3 text-red-600">Our Values</h4>
               <p className="text-gray-500">
-                We believe in quality without compromise, cultural authenticity, sustainable practices, and creating
-                meaningful connections through food that brings people together.
+                Kami percaya pada kualitas tanpa kompromi, keaslian budaya, praktik berkelanjutan, dan menciptakan koneksi yang bermakna melalui makanan yang membawa orang-orang bersama.
               </p>
             </div>
           </div>
@@ -57,8 +55,7 @@ export default function AboutUs() {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Authentic Recipes</h4>
                   <p className="text-gray-500">
-                    Our products are based on traditional Indonesian recipes, passed down through generations and
-                    carefully adapted for modern convenience without compromising on taste.
+                    Produk kami berbasis pada resep tradisional Indonesia, yang diwariskan turun-temurun dan dengan hati-hati disesuaikan untuk kenyamanan modern tanpa mengorbankan rasa.
                   </p>
                 </div>
               </div>
@@ -70,8 +67,7 @@ export default function AboutUs() {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Quality Ingredients</h4>
                   <p className="text-gray-500">
-                    We source only the finest ingredients, working with trusted suppliers to ensure that every product
-                    meets our high standards for quality and flavor.
+                    Kami hanya menggunakan bahan-bahan terbaik, bekerja sama dengan pemasok terpercaya untuk memastikan setiap produk memenuhi standar tinggi kami dalam kualitas dan rasa.
                   </p>
                 </div>
               </div>
@@ -83,8 +79,7 @@ export default function AboutUs() {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Handcrafted Care</h4>
                   <p className="text-gray-500">
-                    Each product is prepared with meticulous attention to detail, ensuring consistent quality and
-                    authentic taste in every batch we produce.
+                    Setiap produk disiapkan dengan perhatian yang teliti terhadap setiap detail, memastikan kualitas yang konsisten dan rasa autentik di setiap batch yang kami produksi.
                   </p>
                 </div>
               </div>

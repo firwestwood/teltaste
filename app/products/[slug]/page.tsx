@@ -81,7 +81,7 @@ const products = [
   },
 ]
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
+export default async function ProductPage({ params }: { params: { slug: string } }) {
   const product = products.find((p) => p.slug === params.slug)
 
   if (!product) {
