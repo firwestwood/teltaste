@@ -14,6 +14,7 @@ export default function ContactSection() {
     name: "",
     email: "",
     message: "",
+    phone: "", // Added phone to the form data state
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
 
@@ -38,7 +39,7 @@ export default function ContactSection() {
           title: "Message Sent!",
           description: "We've received your message and will respond soon.",
         })
-        setFormData({ name: "", email: "", message: "" })
+        setFormData({ name: "", email: "", message: "", phone: "" }) // Reset all form data including phone
         setIsSubmitting(false)
       })
       .catch((error) => {
@@ -82,10 +83,10 @@ export default function ContactSection() {
                 </div>
                 <div className="space-y-2">
                   <Input
-                    id="email"
-                    placeholder="Your email"
-                    type="email"
-                    value={formData.email}
+                    id="phone"
+                    placeholder="Your phone number"
+                    type="tel"  // Changed type to 'tel' for better phone number input handling
+                    value={formData.phone}
                     onChange={handleChange}
                     required
                     className="focus-visible:ring-red-500"
