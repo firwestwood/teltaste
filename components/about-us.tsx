@@ -18,7 +18,7 @@ export default function AboutUs() {
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">Our Story</h3>
             <p className="text-gray-500 max-w-3xl mx-auto">
-              TelTaste dimulai sebagai eksperimen dapur rumahan kecil, lahir dari kecintaan pendiri kami terhadap cita rasa tradisional Indonesia. Apa yang dimulai dengan berbagi hidangan rumahan kepada teman-teman dan keluarga, dengan cepat berkembang menjadi sebuah usaha kuliner yang penuh semangat seiring semakin banyak orang yang menemukan dan jatuh cinta dengan rasa autentik kami.
+              TelTaste dimulai sebagai eksperimen dapur kecil, lahir dari kecintaan kami terhadap cita rasa tradisional Indonesia. Apa yang dimulai dengan berbagi hidangan rumahan kepada teman-teman dan keluarga, dengan cepat berkembang menjadi sebuah usaha kuliner yang penuh semangat seiring semakin banyak orang yang menemukan dan jatuh cinta dengan rasa autentik kami.
             </p>
           </div>
 
@@ -92,6 +92,7 @@ export default function AboutUs() {
                   <h4 className="text-lg font-semibold mb-2">Innovation</h4>
                   <p className="text-gray-500">
                     Sambil menghormati tradisi, kami terus berinovasi untuk menciptakan produk yang memenuhi preferensi makanan modern dan kebutuhan gaya hidup tanpa mengorbankan cita rasa asli.
+                   Sambil tetap menghargai tradisi, kami terus berinovasi untuk menciptakan produk yang memenuhi preferensi diet modern dan kebutuhan gaya hidup tanpa mengorbankan cita rasa asli.
                   </p>
                 </div>
               </div>
