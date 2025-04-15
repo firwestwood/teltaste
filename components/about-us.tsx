@@ -9,8 +9,8 @@ export default function AboutUs() {
             Produk unggulan kami — seperti Nasi GIT (nasi kepal isi ayam dan jamur), Dimsum dengan saus Chili Oil atau Mentai, serta Sambal Kecombrang — dirancang untuk memberikan sensasi rasa yang lezat, mudah dinikmati, dan cocok untuk berbagai momen. Baik untuk pekerja kantoran yang sibuk, mahasiswa yang ingin camilan hemat dan mengenyangkan, hingga keluarga yang mencari variasi makanan di rumah. <br /><br />
             Kami percaya bahwa makanan bukan hanya soal rasa, tetapi juga kemudahan dalam menikmati. Misi TelTaste adalah membawa kekayaan rasa khas Nusantara lebih dekat ke masyarakat modern melalui produk yang terjangkau, berkualitas, dan siap santap. <br /><br />
             Dari dapur rumahan hingga acara Market Day, dari makan siang praktis hingga camilan sore — TelTaste hadir untuk menemani hari-hari Anda dengan rasa yang selalu bikin rindu. <br /><br />
-            <p className="text-center">Let’s Taste TelTaste!</p>
           </p>
+          <p className="text-center">Let’s Taste TelTaste!</p>
         </div>
 
         {/* Additional content */}
@@ -91,6 +91,7 @@ export default function AboutUs() {
                 <div>
                   <h4 className="text-lg font-semibold mb-2">Innovation</h4>
                   <p className="text-gray-500">
+                    Sambil menghormati tradisi, kami terus berinovasi untuk menciptakan produk yang memenuhi preferensi makanan modern dan kebutuhan gaya hidup tanpa mengorbankan cita rasa asli.
                    Sambil tetap menghargai tradisi, kami terus berinovasi untuk menciptakan produk yang memenuhi preferensi diet modern dan kebutuhan gaya hidup tanpa mengorbankan cita rasa asli.
                   </p>
                 </div>

@@ -1,6 +1,9 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import { useState } from "react"
 
 // Product data
 const products = [
@@ -8,7 +11,10 @@ const products = [
     slug: "nasi-git",
     name: "Nasi GIT",
     description: "Nasi dengan aneka isian (ayam, jamur, ikan) yang praktis dan lezat.",
-    image: "/placeholder.svg?height=600&width=600",
+    images: [
+      "/nasi-git-ayam.png?height=600&width=600",
+      "/nasi-git-tongkol.png?height=600&width=600",
+    ],
     details: {
       title: "Nasi GIT - Nasi Istimewa dengan Aneka Isian",
       description:
@@ -33,7 +39,11 @@ const products = [
     slug: "dimsum-chili-oil-mentai",
     name: "Dimsum Chili Oil & Mentai",
     description: "Camilan dengan cita rasa unik dan pedas gurih.",
-    image: "/placeholder.svg?height=600&width=600",
+    images: [
+      "/dimsum-original.png?height=600&width=600",
+      "/dimsum-mentai.png?height=600&width=600",
+      "/dimsum-chili.png?height=600&width=600"
+    ],
     details: {
       title: "Dimsum Chili Oil & Mentai - Camilan Lezat dengan Sentuhan Modern",
       description:
@@ -58,7 +68,7 @@ const products = [
     slug: "sambal-kecombrang",
     name: "Sambal Kecombrang",
     description: "Sambal khas dengan aroma kecombrang yang menggugah selera.",
-    image: "/placeholder.svg?height=600&width=600",
+    images: ["/sambal-kecombrang.jpg?height=600&width=600"],
     details: {
       title: "Sambal Kecombrang - Sambal Tradisional dengan Aroma Eksotis",
       description:
@@ -81,8 +91,10 @@ const products = [
   },
 ]
 
-export default async function ProductPage({ params }: { params: { slug: string } }) {
+export default function ProductPage({ params }: { params: { slug: string } }) {
   const product = products.find((p) => p.slug === params.slug)
+
+  const [currentImage, setCurrentImage] = useState(0)
 
   if (!product) {
     notFound()
@@ -102,8 +114,57 @@ export default async function ProductPage({ params }: { params: { slug: string }
       </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-        <div className="rounded-lg overflow-hidden">
-          <img src={product.image || "/placeholder.svg"} alt={product.name} className="w-full h-auto object-cover" />
+        <div className="rounded-lg overflow-hidden relative">
+          <img
+            src={product.images?.[currentImage] || "/placeholder.svg"}
+            alt={product.name}
+            className="w-full h-auto object-cover transition duration-300 ease-in-out"
+          />
+
+          {/* Tombol Sebelumnya */}
+          {product.images.length > 1 && (
+            <>
+              <button
+                onClick={() =>
+                  setCurrentImage((prev) =>
+                    prev === 0 ? product.images.length - 1 : prev - 1
+                  )
+                }
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-red-100 transition"
+                aria-label="Sebelumnya"
+              >
+                ←
+              </button>
+
+              {/* Tombol Berikutnya */}
+              <button
+                onClick={() =>
+                  setCurrentImage((prev) =>
+                    prev === product.images.length - 1 ? 0 : prev + 1
+                  )
+                }
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow hover:bg-red-100 transition"
+                aria-label="Berikutnya"
+              >
+                →
+              </button>
+            </>
+          )}
+
+          {/* Indikator Bawah */}
+          {product.images.length > 1 && (
+            <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 flex space-x-2">
+              {product.images.map((_, index) => (
+                <button
+                  key={index}
+                  className={`w-3 h-3 rounded-full ${
+                    currentImage === index ? "bg-red-600" : "bg-gray-300"
+                  }`}
+                  onClick={() => setCurrentImage(index)}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div>

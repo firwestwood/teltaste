@@ -9,21 +9,21 @@ export default function ProductShowcase() {
       slug: "nasi-git",
       name: "Nasi GIT",
       description: "Nasi dengan aneka isian (ayam, jamur, ikan) yang praktis dan lezat.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/nasi-git-ayam.png?height=300&width=300",
     },
     {
       id: 2,
       slug: "dimsum-chili-oil-mentai",
       name: "Dimsum Chili Oil & Mentai",
       description: "Camilan dengan cita rasa unik dan pedas gurih.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/dimsum-original.png?height=300&width=300",
     },
     {
       id: 3,
       slug: "sambal-kecombrang",
       name: "Sambal Kecombrang",
       description: "Sambal khas dengan aroma kecombrang yang menggugah selera.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/sambal-kecombrang.jpg?height=300&width=300",
     },
   ]
 
@@ -60,7 +60,7 @@ export default function ProductShowcase() {
                     variant="outline"
                     className="w-full border-red-600 text-red-600 hover:bg-red-600 hover:text-white transition-all duration-300"
                   >
-                    Learn More
+                    Order Sekarang
                   </Button>
                 </Link>
               </CardFooter>
