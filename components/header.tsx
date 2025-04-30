@@ -14,7 +14,7 @@ export default function Header() {
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center">
             {/* Tambahkan logo di sini */}
-            <img src="https://iili.io/30C6n0g.jpg" alt="Logo" className="h-20 w-20" />
+            <img src="/teltaste-logo-remove-background.png" alt="Logo" className="h-20 w-20" />
             <span className="text-xl font-bold text-red-600">TelTaste</span>
           </Link>
         </div>
