@@ -39,13 +39,3 @@ export default function Footer() {
             </nav>
           </div>
         </div>
-
-        <div className="mt-8 pt-8 border-t text-center">
-          <p className="text-center text-sm text-gray-500">
-            Made by TelTaste &copy; {new Date().getFullYear()} All rights reserved.
-          </p>
-        </div>
-      </div>
-    </footer>
-  )
-}
